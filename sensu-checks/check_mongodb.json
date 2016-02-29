@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "mongodb_check": {
+      "command": "check-mongodb.rb",
+      "interval": 10,
+      "standalone": true,
+      "handlers": ["st2"],
+      "remedy_action": "sudo service mongod restart"
+    }
+  }
+}
+

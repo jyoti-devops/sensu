@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "nodeJS_check": {
+      "command": "check-ports.rb",
+      "interval": 10,
+      "standalone": true,
+      "handlers": ["st2"],
+      "remedy_action": "sudo pkill -9 nodejs; sudo forever start /root/D4D/server/app.js"
+    }
+  }
+}

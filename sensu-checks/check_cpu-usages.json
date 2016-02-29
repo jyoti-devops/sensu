@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "cpu_usages_check": {
+      "command": "check-cpu.rb -w 70 -c 85",
+      "interval": 10,
+      "standalone": true,
+      "remedy_action": "echo 'Top CPU consuming processes:' && top -b -n 1 | head -n 15  | tail -n 9 | awk '{print $12}'",
+      "handlers": ["st2"]
+    }
+  }
+}

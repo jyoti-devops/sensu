@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "check_memory_usage": {
+      "command": "check-memory-percent.sh -w 70 -c 85",
+      "interval": 10,
+      "standalone": true
+    }
+  }
+}
+
